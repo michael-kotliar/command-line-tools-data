@@ -1,0 +1,51 @@
+Coordinate sorted BAM alignment and BAI index files with 94 mapped paired-end reads from chr4 dm3.
+Mapped with STAR from ../fastq/first.fastq.gz and ../fastq/second.fastq.gz input files and indices built to include only chr4 dm3.
+
+Mapping parameters:
+    --outFilterMultimapNmax 1  (max number of multiple alignments allowed for a read)
+    --outFilterMismatchNmax 5  (maximum number of mismatches per pair)
+    --seedSearchStartLmax  15  (defines the search start point through the read)
+    --alignSJDBoverhangMin  1  (minimum overhang (i.e. block size) for annotated (sjdb) spliced alignments)
+
+BAM file details:
+
+    raw total sequences:	188
+    filtered sequences:	0
+    sequences:	188
+    is sorted:	1
+    1st fragments:	94
+    last fragments:	94
+    reads mapped:	188
+    reads mapped and paired:	188	# paired-end technology bit set + both mates mapped
+    reads unmapped:	0
+    reads properly paired:	188	# proper-pair bit set
+    reads paired:	188	# paired-end technology bit set
+    reads duplicated:	0	# PCR or optical duplicate bit set
+    reads MQ0:	0	# mapped and MQ=0
+    reads QC failed:	0
+    non-primary alignments:	0
+    total length:	6956	# ignores clipping
+    bases mapped:	6956	# ignores clipping
+    bases mapped (cigar):	6524	# more accurate
+    bases trimmed:	0
+    bases duplicated:	0
+    mismatches:	0	# from NM fields
+    error rate:	0.000000e+00	# mismatches / bases mapped (cigar)
+    average length:	37
+    maximum length:	37
+    average quality:	28.9
+    insert size average:	434.3
+    insert size standard deviation:	1287.3
+    inward oriented pairs:	93
+    outward oriented pairs:	0
+    pairs with other orientation:	0
+    pairs on different chromosomes:	0
+
+
+
+
+
+
+File includes only 94 mapped paired-end reads from chr4 dm3.
+Received from mapping ../fastq/first.fastq.gz and ../fastq/second.fastq.gz with STAR and sorting/indexing with samtools.
+To see detailed STAR parameters run samtools view -H chr4_100_mapped_reads.bam
